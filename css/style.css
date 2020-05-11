@@ -1,0 +1,239 @@
+/* Inspired by https://codepen.io/brokentriathlete/pen/GmbxKL */
+
+body {
+  background: #00008B;
+}
+
+.box {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin-left: 27%;
+}
+
+.container {
+  position: absolute;
+  width: 70%;
+  height: 25%;
+  top: 70%;
+  left: 15%;
+}
+
+.zombie {
+  position: absolute;
+  width: 120%;
+  height: 250%;
+  top: -150%;
+  left: -10%;
+  z-index: 1;
+}
+
+.head-top {
+  position: absolute;
+  width: 32%;
+  height: 48.6%;
+  left: 34%;
+  background: #ADFF2F;
+  border-radius: 50% 50% 5% 5%;
+}
+
+.head-top-copy {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: transparent;
+  border-radius: 50% 50% 5% 5%;
+  z-index: 2;
+}
+
+.head-bottom {
+  position: absolute;
+  width: 28%;
+  height: 50.2%;
+  top: 26%;
+  left: 36%;
+  background: #ADFF2F;
+  transform: rotate(45deg);
+  border-radius: 25% 25% 20% 25%;
+  z-index: 1;
+}
+
+.mouth {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  top: 30%;
+  left: 35%;
+  background: #2F060E;
+  transform: rotate(-45deg);
+  border: 3px solid black;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  border-bottom-left-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+}
+
+.mouth-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -3%;
+  left: -4%;
+  background: transparent;
+  border: 3px solid black;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  border-bottom-left-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  z-index: 1;
+}
+
+.tooth1 {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 5%;
+  left: 5%;
+  background: #E6D1A6;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.tooth2 {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 0%;
+  left: 28%;
+  background:#E6D1A6;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.tooth3 {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 3%;
+  left: 75%;
+  background: #E6D1A6;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.tooth4 {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 78%;
+  left: 52%;
+  background: #E6D1A6;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  z-index: 1;
+}
+
+.tongue {
+  position: absolute;
+  width: 70%;
+  height: 30%;
+  top: 70%;
+  left: 15%;
+  background: #781824;
+  background: radial-gradient(closest-corner at 30% 70%, #9C3C4A, #781824);
+  border-radius: 50%;
+}
+
+.left-eye {
+  position: absolute;
+  width: 45%;
+  height: 30%;
+  top: 25%;
+  border-top: 5px solid black;
+  border-bottom: 3px solid black;
+  transform: rotate(-45deg);
+  border-radius: 30%;
+  z-index: 1;
+}
+
+.right-eye {
+  position: absolute;
+  width: 45%;
+  height: 30%;
+  top: 25%;
+  right: 0;
+  border-top: 5px solid black;
+  border-bottom: 3px solid black;
+  transform: rotate(45deg);
+  border-radius: 30%;
+  z-index: 1;
+}
+
+.left-eye-hole {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 23%;
+  left: 10%;
+  background: #1C0003;
+  z-index: 1;
+  border-radius: 40%;
+}
+
+.right-eye-hole {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 23%;
+  left: 10%;
+  background: #1C0003;
+  z-index: 1;
+  border-radius: 40%;
+}
+
+.eyeball {
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  top: 45%;
+  left: 35%;
+  background: #E6E7E9;
+  background: linear-gradient(#E6E7e9, #909193 120%);
+  border-radius: 50%;
+}
+
+.pupil {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 50%;
+  left: 35%;
+  background: black;
+  border-radius: 50%;
+}
+
+.left-nostril, .right-nostril {
+  position: absolute;
+  width: 4%;
+  height: 8%;
+  background: black;
+  border-radius: 40%;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.left-nostril {
+  top: 23%;
+  left: 18%;
+}
+
+.right-nostril {
+  top: 15.5%;
+  left: 25%;
+}
